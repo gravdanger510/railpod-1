@@ -23,12 +23,16 @@ if( !defined( 'ABSPATH' ) ) {
 		<meta charset="<?php bloginfo( 'charset' ); ?>"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
+		<title>RailPod
+			<?php /* wp_title( '&#124;', true, 'right' ); */ ?></title>
 		<link rel="shortcut icon" href="/wp-content/themes/railpod/core/images/favicon.png" />
 		<link rel="profile" href="http://gmpg.org/xfn/11"/>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 
 		<?php wp_head(); ?>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="/wp-content/themes/railpod/core/js/railpod.js"></script>
 	</head>
 
 <body <?php body_class(); ?>>
@@ -61,69 +65,71 @@ if( !defined( 'ABSPATH' ) ) {
 					<img src="/wp-content/themes/railpod/core/images/railpod_logo.png" />
 				</a>
 			</div><!-- end of #logo -->
+			<img src="/wp-content/themes/railpod/core/images/nav_button.png" class="mobileonly nav_button" />
+			<img src="/wp-content/themes/railpod/core/images/nav_x.png" class="mobileonly nav_x" />
 			<ul id="nav">
 				<li id="nav1">
-					<a href="#">First</a>
+					<a href="#">About Us</a>
 					<ul>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">First tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">First tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">First tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">First tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">First tab item</a>
 						</li>
 					</ul>
 				</li>
 				<li id="nav2">
-					<a href="#">Second</a>
+					<a href="#">Team</a>
 					<ul>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Second tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Second tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Second tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Second tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Second tab item</a>
 						</li>
 					</ul>
 				</li>
 				<li id="nav3">
-					<a href="#">Third</a>
+					<a href="#">Contact Us</a>
 					<ul>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Third tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Third tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Third tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Third tab item</a>
 						</li>
 						<li>
-							<a href="#">Subnav item</a>
+							<a href="#">Third tab item</a>
 						</li>
 					</ul>
 				</li>
-				
 			</ul>
+			
 		</div><!-- /#logo_nav -->
 		
 

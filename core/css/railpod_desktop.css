@@ -1,0 +1,45 @@
+/* desktop */
+
+#logo_nav > .mobileonly,
+.mobileonly {display: none;}
+
+.home {
+	background-image: url(/wp-content/themes/railpod/core/images/railpod_hero.jpg);
+}
+
+#logo {
+	margin: 0 35px 0 0;
+}
+
+ul#nav {
+	width: 74%;
+}
+
+ul#nav > li.hover ul { display: block; }
+
+ul#nav > li > a {
+	float: left;
+	display: block;
+	padding: 12px 24px;
+	margin: 0;
+	color: #555;
+}
+
+ul#nav li ul li a { 		/* subnav li */
+	/* padding: 12px 24px 0 24px; */
+	width: 100%;
+	padding: 12px 24px;
+	float: left;
+	display: block;
+	margin: 0em;
+	color: #555;
+}
+
+ul#nav li ul li a:hover { 		/* subnav li */
+	background: #5e5e5e;
+	color: white;
+}
+
+.col-460 {
+	width: 48.936170212766%;
+}

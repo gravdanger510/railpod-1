@@ -1,7 +1,14 @@
 /* CSS Rules: Sorted alphabetically for better organization. */
 
-/* =Reset CSS (v2.0) http://meyerweb.com/eric/tools/css/reset/
--------------------------------------------------------------- */
+
+@import url("/wp-content/themes/railpod/core/css/railpod_mobile.css") (max-width: 767px);
+/*
+TABLET (currently same as desktop)
+@import url("/wp-content/themes/railpod/core/css/railpod_tablet.css") (min-width: 768px) and (max-width: 1025px);
+*/
+@import url("/wp-content/themes/railpod/core/css/railpod_desktop.css") (min-width: 768px);
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
@@ -227,10 +234,6 @@ sub {
 
 .col-380 {
 	width: 40.425531914894%;
-}
-
-.col-460 {
-	width: 48.936170212766%;
 }
 
 .col-540 {
@@ -693,11 +696,6 @@ form div {
 
 /* =Header
 -------------------------------------------------------------- */
-#logo {
-	float: none;
-	display: inline-block;
-	margin: 0;
-}
 
 .site-name {
 	display: block;
@@ -2780,22 +2778,24 @@ BDO[DIR="rtl"] {
 }
 
 /* 
-	Newest edits
+	RailPod edits: master
 -------------------------------------------------------------- */
 
+
 * {padding: 0; margin: 0;}
+
+ul, ol, li { list-style-type:none; padding: 0; margin: 0;}
 
 li {list-style-type: none;}
 
 .home {
-	background-image: url(/wp-content/themes/railpod/core/images/railpod_hero.jpg);
 	background-size: cover;
 }
 
 .home #footer {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
+	width: 50%;
 }
 
 #logo_nav {
@@ -2807,69 +2807,28 @@ li {list-style-type: none;}
 #logo_nav > * { float: left; display: block;}
 
 #logo {
-	width: 10%;
+	width: 100px;
 }
 
-ul#nav {
-	width: 74%;
-	margin: 0 ;
-}
-
-ul#nav > li > a {
-	float: left;
-	display: block;
-	padding: 12px 24px;
-	margin: 0em 1.8em 0 0;
-	color: #555;
-}
-
-ul#nav > li > a:hover {
+ul#nav > li.hover a {
 	background: white;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 ul#nav li ul { 				/* subnav ul */
+	display: none;
 	position: absolute;
 	padding: 0;
 	top: 55px;
 	margin: 0;
-	width: 300px;
-	columns: 2;
+	width: 350px;
 	background: white;
 	z-index: 99;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-ul#nav li ul li a { 		/* subnav li */
-	/* padding: 12px 24px 0 24px; */
-	width: 34%;
-	padding: 12px 24px;
-	float: left;
-	display: block;
-	margin: 0em;
-	color: #555;
-}
-
-ul#nav li ul li a:hover { 		/* subnav li */
-	background: #5e5e5e;
-	color: white;
-}
 
 
-<div id="logo_nav">
-	<div id="logo">
-		<a href="<?php echo home_url( '/' ); ?>">
-			<img src="/wp-content/themes/railpod/core/images/railpod_logo.png" />
-		</a>
-	</div><!-- end of #logo -->
-	<ul id="nav">
-		<li id="nav1">
-			<a href="#">First</a>
-			<ul>
-				<li>
-					<a href="#">Subnav item</a>
-				</li>
 
-		
 		
 		

@@ -1,0 +1,55 @@
+/* mobile */
+
+#logo_nav > .mobileonly,
+.mobileonly {display: block;}
+
+#logo_nav > .nav_button,
+#logo_nav > .nav_x { float: right;}
+
+#logo_nav > .nav_x {display: none;}
+
+ul#nav {
+	display: none;
+	width: 96%;
+	position: fixed;
+	left: 0;
+	padding: 2%;
+	z-index: 99;
+	margin: 50px 0 0 0 ;
+	background: white;
+}
+
+ul#nav li { padding: 0; margin: 0;}
+
+ul#nav > li > a {
+	display: block;
+	float: left;
+	padding: 4%;
+	margin: 2% 0;
+	width: 92%;
+	color: #555;
+	border-radius: 8px;
+	background: #efefef;
+	text-align: center;
+}
+
+.nav_button,
+.nav_x {
+	width: 20px;
+	float: right;
+}
+
+.blackcover {
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 98;
+	opacity: .8;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.col-460 {
+	width: 100%;
+}

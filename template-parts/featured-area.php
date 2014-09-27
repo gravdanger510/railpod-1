@@ -23,7 +23,7 @@ $emtpy_cta = ( empty( $responsive_options['cta_text'] ) ) ? false : true;
 			if( isset( $responsive_options['home_headline'] ) && $db && $empty )
 				echo $responsive_options['home_headline'];
 			else {
-				_e( 'Hello, World!', 'responsive' );
+				_e( 'RailPod', 'responsive' );
 			}
 			?>
 		</h1>
@@ -33,7 +33,7 @@ $emtpy_cta = ( empty( $responsive_options['cta_text'] ) ) ? false : true;
 			if( isset( $responsive_options['home_subheadline'] ) && $db && $empty )
 				echo $responsive_options['home_subheadline'];
 			else
-				_e( 'Your H2 subheadline here', 'responsive' );
+				_e( 'Your subheadline here', 'responsive' );
 			?>
 		</h2>
 
@@ -41,7 +41,7 @@ $emtpy_cta = ( empty( $responsive_options['cta_text'] ) ) ? false : true;
 		if ( isset( $responsive_options['home_content_area'] ) && $db && $empty ) {
 			echo do_shortcode( wpautop( $responsive_options['home_content_area'] ) );
 		} else {
-			echo '<p>' . __( 'Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like.', 'responsive' ) . '</p>';
+			echo '<p>' . __( 'Here we will add content describing the product in a line or two.' ) . '</p>';
 		} ?>
 
 
